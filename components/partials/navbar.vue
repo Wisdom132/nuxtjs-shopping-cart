@@ -5,7 +5,7 @@
         <nav class="navbar navbar-expand-lg navbar-light w-100">
           <!-- Brand and toggle get grouped for better mobile display -->
           <a class="navbar-brand logo_h" href="index.html">
-            <h2>WE</h2>
+            <h2>Eyo</h2>
             <!-- <img src="/img/logo.png" alt /> -->
           </a>
           <button
