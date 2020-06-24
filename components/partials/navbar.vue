@@ -1,7 +1,9 @@
 <template>
     <header>
         <div class="container px-0">
+    
             <nav class="navbar navbar-expand-lg navbar-light">
+            <!-- <div class=""> -->
                 <div class="col-md-2 col-lg-2">
                     <a class="navbar-brand logo_h" href="index.html">
                         <h2>Eyo</h2>
@@ -9,12 +11,12 @@
                     </a>
                 </div>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler  " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-
+<!-- </div> -->
                 <div class="col-md-5">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search for products, brands and categories...">
@@ -33,13 +35,19 @@
                           
                             <a class="btn btn-light" data-toggle="dropdown" href="#" role="button"><i class="ti-user px-1"></i> Login</a> 
                             <div class="dropdown-menu mt-1">
-                                <button type="button" class="btn btn-primary">Login</button>
-                                <p>OR</p>
-                                <a class="dropdown-item py-2" href="#">Create An Account</a>
+                            <!-- <div class="dropdown-div"> -->
+                            <div class="inner-dv mt-2 mb-2">
+                            <router-link to="/" href="#" class="login_btn mx-4 px-5"> LOGIN</router-link>
+                                <p class="mt-3 mx-4 px-5">OR</p>
+                            </div>    
+                            <!-- </div>   -->
+                                <!-- <a class="dropdown-item" href="#">CREATE AN ACCOUNT</a> -->
+                                 <router-link to="/" href="#" style="font-size:14px; color:#71cd14; font-weight: 700"  role="button" class="btn btn-light mx-2"> <strong></strong> CREATE AN ACCOUNT </router-link>
+                               
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item py-2" href="#"> <i class="ti-user"></i> <span class="px-2">Account</span> </a>
-                                <a class="dropdown-item py-2" href="#"> <i class="fa fa-user"></i> <span class="px-2">Orders</span> </a>
-                                <a class="dropdown-item py-2" href="#"> <i class="fa fa-user"></i> <span class="px-2">Wishlist</span> </a>
+                                <a class="dropdown-item py-2" href="#"> <i class="ti-bag"></i> <span class="px-2">Orders</span> </a>
+                                <a class="dropdown-item py-2" href="#"> <i class="ti-heart"></i> <span class="px-2">Wishlist</span> </a>
                             </div>
                         </li>
 
@@ -86,8 +94,8 @@ header {
 .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child),
 .input-group>.input-group-prepend:not(:first-child)>.btn,
 .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
-    background: #71CD1C;
-    border: 1px solid #71CD1C;
+    background: #71cd14;
+    border: 1px solid #71cd14;
 }
 
 .input-group>.input-group-append>.btn,
@@ -97,7 +105,7 @@ header {
 .input-group>.input-group-prepend:not(:first-child)>.btn,
 .input-group>.input-group-prepend:not(:first-child)>.input-group-text :focus {
     border-color: hidden;
-    background-color: #71CD1C;
+    background-color: #71cd14;
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -117,9 +125,34 @@ header {
 
 .dropdown-item.active,
 .dropdown-item:active {
-    background-color: #71CD1C;
+    background-color: #71cd14;
 }
 .cart_btn {
+    display: inline-block;
+    background: #71cd14;
+    padding: 0px 25px;
+    letter-spacing: 0.25px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+width: auto;
+    font-weight: 500;
+    line-height: 37px;
+    outline: none !important;
+    box-shadow: none !important;
+    text-align: center;
+    border: 1px solid #71cd14;
+    cursor: pointer;
+  
+    -webkit-transition: all 300ms linear 0s;
+    transition: all 300ms linear 0s;
+    border-radius: 5px;
+}
+.inner-div{
+ 
+  width: 50%;
+
+}
+.login_btn {
     display: inline-block;
     background: #71cd14;
     padding: 0px 25px;
@@ -139,4 +172,12 @@ header {
     transition: all 300ms linear 0s;
     border-radius: 5px;
 }
+.dropdown-item {
+  font-size:14px
+}
+
+.btn:not(:disabled):not(.disabled):hover {
+  color: #71cd14;
+}
+
 </style>
